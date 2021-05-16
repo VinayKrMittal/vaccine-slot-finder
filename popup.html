@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #id {
+            flex-wrap: wrap;
+            display: flex;
+
+        }
+
+        .pin,
+        .age {
+            width: 80px;
+            margin-left: 10px;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="demo">
+        <h5>Vaccine slot notifer</h5>
+        <div id="parent">
+            <input type="text" placeholder="Enter Pincode" class="pin" />
+            <input type="text" placeholder="Enter age" class="age" />
+            <button type="button" onclick="findSlot()">Notify Me</button>
+        </div>
+        <table>
+            <tr>
+                <th>Location</th>
+                <th>Age</th>
+                <th>Available Doses</th>
+            </tr>
+            <tbody id="tableBody">
+            </tbody>
+
+        </table>
+    </div>
+
+    <script src="./javascript.js"></script>
+
+</body>
+
+</html>
